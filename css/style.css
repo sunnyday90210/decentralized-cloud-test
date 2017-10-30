@@ -42,8 +42,10 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
+  height: 100%;
   font-weight: normal;
   line-height: 1.5;
   color: #333;
@@ -90,7 +92,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100vh !important;
   overflow: hidden !important;
 }
 
@@ -101,13 +103,13 @@ body {
 
 .header-overlay {
   height: 100vh;
-  position: absolute;
+  position: absolute !important;
   top: 0;
   left: 0;
   width: 100vw;
   z-index: 1;
   background: #f8f8f8;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .trigger {
@@ -159,14 +161,20 @@ margin-right: 30rem;
 }
 
 .card {
-  position: relative;
-  z-index: 100;
+  position: relative !important;
+  z-index: 100 !important;
   border-radius: 3px;
 }
 
-h5 {
+/* h5 {
   position: relative;
   z-index: 10;
   font-family: 'Source Code Pro', sans-serif;
   font-weight: 800 !important;
+} */
+
+
+#card-hidden {
+  position: relative !important;
+  z-index: 999 !important;
 }
